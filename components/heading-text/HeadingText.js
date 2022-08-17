@@ -21,7 +21,7 @@ const HeadingText = () => {
           religious consultations through an Islamic lens, respecting the unique
           juxtaposition of your culture and current situation.
         </p>
-        <a className="fgr block mx-auto w-[202px] h-[61px] bg-[#AE8B5C] text-[#fff] text-[24px] rounded-[50px] px-[20px] py-[10px] mt-[52px]">
+        <a className="fgr block mx-auto w-[202px] h-[61px] bg-[#AE8B5C] text-[#fff] text-[24px] rounded-[50px] px-[30px] py-[13px] mt-[52px] hover:opacity-[.8]">
           Get Started
         </a>
       </div>

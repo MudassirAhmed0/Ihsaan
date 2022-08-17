@@ -7,7 +7,7 @@ import Script from "next/script";
 import { FiInstagram } from "react-icons/fi";
 import { BsChevronDown } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
-
+import {TbMenu2} from "react-icons/tb";
 import { useRef, useState } from "react";
 import Link from "next/link";
 
@@ -64,173 +64,57 @@ export default function Navigation() {
           </li>
         </ul>
       </div>
-      <nav className="desktop-nav bg-[#0F2E3C] z-30 transform brown-light text-[15px] flex justify-between items-center">
-        <div className="myContainer flex items-center justify-between">
-          <div className="w-[237px] h-[78px]">
+      <div className="bg-[#0F2E3C] block xl:hidden">
+        <div className="myContainer flex justify-between items-center">
+        <div className="w-[244px] h-[80px] bg-pink-400 opacity-[.4]">
             <a href="./">
-              <Image src={logo} alt="Logo" width={1500} height={500} />
+              {/* <Image src={logo} alt="Logo" width={1500} height={500} /> */}
             </a>
           </div>
-          <ul className="desktop-nav-menu text-white capitalize flex gap-x-12 hidde n">
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+          <TbMenu2 className="text-[40px] text-[#fff]" />
+        </div>
+      </div>
+      <nav className="desktop-nav bg-[#0F2E3C] z-30 transform brown-light text-[15px] flex justify-between items-center">
+        <div className="myContainer flex-col  xl:flex-row flex items-center justify-between">
+          <div className="w-[244px] h-[80px] bg-pink-400 opacity-[.4]">
+            <a href="./">
+              {/* <Image src={logo} alt="Logo" width={1500} height={500} /> */}
+            </a>
+          </div>
+          <ul className="desktop-nav-menu text-white capitalize flex-col xl:flex-row text-center xl:text-left flex gap-x-8 pb-[40px] xl:pb-0">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/about">
                 <a>About Us</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/team">
                 <a>Our Team</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/services">
                 <a>Services</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/Programs">
                 <a>Programs</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/faqs">
                 <a>FAQs</a>
               </Link>
             </li>
-            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[30px] px-[10px] py-[50px]">
+            <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
               <Link href="/faqs">
-                <a className="bg-[#AE8B5C] text-[#fff] rounded-[50px] px-[53px] py-[22px]">Get Started</a>
+                <a className="bg-[#AE8B5C] text-[#fff] rounded-[50px] px-[53px] py-[22px] hover:opacity-[.8]">Get Started</a>
               </Link>
             </li>
           </ul>
         </div>
       </nav>
-      {/* mobile navigation bar start   */}
-      <nav className="mobile-nav mobile-navv h-[100 vh] left-[50%] z-[31] transform brown-light text-[15px] translate-x-[-50%] myContainer flex justify-start absolute items-center flex-col top-[0]">
-        <div className="w-full h-full absolute top-0 left-0">
-          <span className="absolute top-0 left-0 w-full h-full z-[3] homeHeroOverlay1 back-transparent"></span>
-          <span className="absolute top-0 left-0 w-full h-full z-[2] homeHeroOverlay2 back-transparent"></span>
-        </div>
-        <div className="w-[100%] h-[78px] flex justify-between items-center z-[5]">
-          <a href="./">
-            <span className="image_container max-w-[170px] max-h-[70px] inline-block">
-              <Image src={logo} alt="Logo" />
-            </span>
-          </a>
-          <div id="toggle" onClick={() => toggleFunction()}></div>
-        </div>
-      </nav>
-      <div
-        id="menu_options"
-        className="mobile-nav myContainer opacity-0 fixed static z-[30] translate-y-[-100vh]"
-      >
-        <div className="w-full h-full absolute top-0 left-0 z-[-1]">
-          <span className="absolute top-0 left-0 w-full h-full z-[3] homeHeroOverlay1"></span>
-          <span className="absolute top-0 left-0 w-full h-full z-[2] homeHeroOverlay2"></span>
-        </div>
-        <ul className="h-[100vh] text-white uppercase flex gap-x-12 flex-col z-[5] pt-[108px] w-[100%]">
-          <li className="text-[25px] transition-all duration-300 leading-[70px] tracking-[5px]">
-            <Link href="/about">
-              <a>About Us</a>
-            </Link>
-          </li>
-          <li
-            onClick={() => openDropdownMenu()}
-            className="relative dropdownB tn"
-          >
-            <span className="text-[25px] cursor-pointer leading-[70px] tracking-[5px] flex gap-x-[5px] transition-all duration-300 justify-between">
-              Services
-              <span className={`rotate-18 0`}>
-                <BsChevronDown color="#ccc" className="mt-[20px]" />
-              </span>
-            </span>
-            <div
-              id="divisionDropDown"
-              ref={divisionDropDown}
-              className={`${
-                isOpenDropdown ? "show-dropdown" : ""
-              } dropdown2 bachalay opacity-1 max-h-[0]`}
-            >
-              <div className="pb-[18px] dropdown2 w-[100%] overflow-hidden h-[auto] normal-case transition-all duration-300 tracking-0 rounded-[15px] flex justify-between opacity-100 flex-col">
-                <div className="absolute top-0 right-0 img_container w-[175px]"></div>
-                <ul className="flex flex-col">
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./governance.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Governance, Risk and Compliance
-                    </a>
-                  </li>
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./engineering.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Engineering and Architecture
-                    </a>
-                  </li>
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./response.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Response and Resilience
-                    </a>
-                  </li>
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./operational.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Industrial Operational Technology
-                    </a>
-                  </li>
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./service-delivery.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Cybersecurity service delivery
-                    </a>
-                  </li>
-                  <li className="transition-all duration-300 py-[5px]">
-                    <a
-                      href="./management-office.html"
-                      className="brown-light text-[12px] tracking-[2.4px] uppercase"
-                    >
-                      Strategy Management office (SMO)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li className="text-[25px] transition-all duration-300 leading-[70px] tracking-[5px]">
-            <Link href="/about">
-              <a>Strategy</a>
-            </Link>
-          </li>
-          <li className="text-[25px] transition-all duration-300 leading-[70px] tracking-[5px]">
-            <Link href="/about">
-              <a>Standards</a>
-            </Link>
-          </li>
-          <li className="text-[25px] transition-all duration-300 leading-[70px] tracking-[5px]">
-            <Link href="/about">
-              <a>News</a>
-            </Link>
-          </li>
-          <li className="text-[25px] transition-all duration-300 leading-[70px] tracking-[5px]">
-            <a>
-              <Link href="/contact-us">
-                <a>Contact Us</a>
-              </Link>
-            </a>
-          </li>
-        </ul>
-      </div>
-      {/* mobile navigation bar end  */}
     </div>
   );
 }
