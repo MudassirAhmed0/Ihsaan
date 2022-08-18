@@ -10,35 +10,31 @@ const Footer = () => {
     <>
       <footer className={`bg-[#0F2E3C] pt-[97px]`}>
         <div className="">
-          <div className="myContainer">
-            <h1 className="fpr text-[85px] text-[#fff] leading-[85px] max-w-[800px] mx-auto text-center">
+          <div className="main__container">
+            <h1 className="fpr text-[32px] md:text-[85px] text-[#fff] leading-[40px] md:leading-[85px] max-w-[800px] mx-auto text-center">
               Get started with Ihsan Coaching today
             </h1>
-            <p className="fgr text-[24px] text-[#fff] pt-[62px] pb-[77px] max-w-[1090px] mx-auto text-center">
+            <p className="fgr text-[12px] px-[10px] sm:text-[18px] md:text-[24px] text-[#fff] pt-[62px] pb-[77px] max-w-[1090px] mx-auto text-center">
               Let’s take the first step towards better health and well-being,
               together. Get in touch to learn more about coaches or services, or
               to set up an initial session that fits your schedule.
             </p>
-            <div className="flex justify-center items-center gap-x-[20px]">
-              <a>
-                <button className="fgr w-[332px] h-[79px] border-[3px] border-[#fff] flex justify-between items-center bg-[#fff] text-[24px] text-[#555555] rounded-[50px] px-[30px] py-[10px] hover:border-[#FAF7F2] hover:bg-[#0F2E3C] hover:text-[#fff] group">
+            <div className="flex justify-center items-center gap-x-2 md:gap-x-[20px]">
+                <button className="fgr w-[38%] md:w-[25%] border-2 md:border-[3px] border-[#fff] flex justify-between items-center bg-[#fff] text-[12px] md:text-[24px] text-[#555555] rounded-[50px] px-[10px] md:px-[30px] py-[10px] hover:border-[#FAF7F2] hover:bg-[#0F2E3C] hover:text-[#fff] group">
                   Get started
                   <BsFillArrowRightCircleFill
-                     className="text-[#555] text-[30px] group-hover:text-[#fff]"
+                     className="text-[#555] text-[18px] md:text-[30px] group-hover:text-[#fff]"
                   />
                 </button>
-              </a>
-              <a>
-                <button className="fgr w-[332px] h-[79px] border-[3px] border-[#FAF7F2] flex justify-between items-center bg-[#0F2E3C] text-[24px] text-[#fff] rounded-[50px] px-[30px] py-[10px] hover:text-[#555555] hover:bg-[#fff] group">
+                <button className="fgr w-[38%] md:w-[25%] border-2 md:border-[3px] border-[#FAF7F2] flex justify-between items-center bg-[#0F2E3C] text-[12px] md:text-[24px] text-[#fff] rounded-[50px] px-[10px] md:px-[30px] py-[10px] hover:text-[#555555] hover:bg-[#fff] group">
                   Meet the team
                   <BsFillArrowRightCircleFill
-                  className="text-[#fff] text-[30px] group-hover:text-[#555]"
+                  className="text-[#fff] text-[18px] md:text-[30px] group-hover:text-[#555]"
                   />
                 </button>
-              </a>
             </div>
           </div>
-          <div className="myContainer px-[10px] pt-[110px] pb-[100px] flex justify-between">
+          <div className="myContainer px-[10px] pt-[110px] pb-[100px] flex flex-col md:flex-row justify-between">
             <div className="">
               <h6 className="fpr text-[#fff] text-[42px] capitalize">
                 Services
