@@ -4,13 +4,33 @@ import DarkSection from "../components/dark-section/DarkSection";
 import HeadingText from "../components/heading-text/HeadingText";
 import Hero from "../components/hero/Hero";
 import Layout from "../components/layout/layout";
+import Slider from "react-slick";
 
+import Image from 'next/image'
+import Image1 from '../assets/images/Images_programs/Picture 9.jpg'
+import Image2 from '../assets/images/Images_programs/Picture 5.jpg'
+import Image3 from '../assets/images/Images_programs/Picture 7.jpg'
 
 export default function Programs() {
+  const settings = {
+    speed: 500,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: 'w-[100%] outline-0 '
+  };
+
+  const settings2 = {
+    speed: 500,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: 'w-[100%] flex outline-0 '
+  };
  
   return (
     <Layout>
-      {/* hero section */}
+      {/* hero section jumbotron */}
     <section className="w-full py-[93px] bg-[#F2F2F2]">
       <div className="myContainer flex">
         <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center ">
@@ -76,19 +96,37 @@ export default function Programs() {
           
           <div className="feedbacks-wrapper">
             <h2 className="fpr text-[32px] lg:text-[42px] 2xl:text-[52px] text-center mt-[70px] text-[#182657] ">See what previous seminar hosts had to say</h2>
-            <div className="feedbacks mt-[50px]">
-              <div className=" px-[40px] sm:px-[50px] lg:px-[135px] py-[20px] xl:py-[50px] bg-[#1826570D]  xl:mx-[250px] border ">
-                <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] text-center lg:leading-[36px] ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div className="flex mt-[20px] max-w-fit mx-auto ">
-                  <span className="profile bg-white border border-[#707070] rounded-[50%] w-[75px] h-[75px] "></span>
-                  <div className="ml-4">
-                    <p className="text-[12px] md:text-[20px] lg:text-[24px] font-bold ">Sheikh Abdullah Halton Mosque</p>
-                    <p className="text-[12px] md:text-[20px] lg:text-[24px] ">Halton Mosque</p>
+            <div className="feedbacks flex justify-center mt-[50px] w-[100%] ">
+              <div className="w-[100%] md:w-[85%] ">
+                <Slider {...settings} >
+                  <div className=" px-4 md:px-[100px] py-[20px] xl:py-[50px] bg-[#1826570D] border ">
+                    <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] text-center lg:leading-[36px] ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div className="flex mt-[20px] items-center max-w-fit mx-auto ">
+                      <span className="profile bg-white border border-[#707070] rounded-[50%] w-[75px] h-[75px] "></span>
+                      <div className="ml-4">
+                        <p className="text-[12px] md:text-[20px] lg:text-[24px] font-bold ">Sheikh Abdullah Halton Mosque</p>
+                        <p className="text-[12px] md:text-[20px] lg:text-[24px] ">Halton Mosque</p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+
+                  <div className=" px-4 md:px-[100px] py-[20px] xl:py-[50px] bg-[#1826570D] border ">
+                    <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] text-center lg:leading-[36px] ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div className="flex mt-[20px] max-w-fit mx-auto ">
+                      <span className="profile bg-white border border-[#707070] rounded-[50%] w-[75px] h-[75px] "></span>
+                      <div className="ml-4">
+                        <p className="text-[12px] md:text-[20px] lg:text-[24px] font-bold ">Sheikh Abdullah Halton Mosque</p>
+                        <p className="text-[12px] md:text-[20px] lg:text-[24px] ">Halton Mosque</p>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
               </div>
+
             </div>
           </div>
           
@@ -103,17 +141,27 @@ export default function Programs() {
     {/* Image gellary  */}
     <section className="my-10 ">
       <div className="main__container  ">
-        <div className="images-slider flex gap-8 w-full ">
-          <div className="w-[40%] flex justify-center items-center h-[200px] xl:h-[400px] bg-[#1826570D] ">
-            Image
-          </div>
-          <div className="w-[40%] flex justify-center items-center h-[200px] xl:h-[400px] bg-[#1826570D] ">
-            Image
-          </div>
-          <div className="w-[40%] flex justify-center items-center h-[200px] xl:h-[400px] bg-[#1826570D] ">
-            Image
-          </div>
-
+        <div className="images-slider w-[100%] mx-2 md:mx-0 flex gap-x-2 md:gap-x-4  ">
+          {/* <Slider {...settings2} > */}
+            <div className=" w-[28%] image_container flex justify-center items-center bg-[#1826570D] ">
+              <Image className="" src={Image1} alt="Program1"  />
+            </div>
+            <div className=" w-[35%] image_container flex justify-center items-center bg-[#1826570D] ">
+              <Image className="" src={Image2} alt="Program2"  />
+            </div>
+            <div className=" w-[28%] image_container flex justify-center items-center bg-[#1826570D] ">
+              <Image src={Image3} alt="Program3"  />
+            </div>
+              
+            {/* <div className="w-[30%]">
+              <div className="image_container flex justify-center items-center bg-[#1826570D] ">
+                <Image src={Image3} alt="Program3"  />
+              </div>
+            </div> */}
+             
+              
+              
+           {/* </Slider> */}
         </div>
       </div>
     </section>
@@ -125,7 +173,7 @@ export default function Programs() {
     <section>
       <div className="main__container">
           <div className="bg-[#AE8B5C] p-[50px] xl:p-[100px] ">
-            <h2 className="fpr text-[30px] 2xl:text-[52px] mt-[70px] text-[#fff]">Ihsan Coaching is always available to partner with organizations to deliver programs and seminars to local communicates. Contact our team to enquire about programs and seminars.</h2>
+            <h2 className="fpr text-[28px] 2xl:text-[52px] mt-[70px] text-[#fff]">Ihsan Coaching is always available to partner with organizations to deliver programs and seminars to local communicates. Contact our team to enquire about programs and seminars.</h2>
 
 
             <form className=" flex flex-wrap justify-between gap-y-2 md:gap-y-4 mt-[50px]" action="">
