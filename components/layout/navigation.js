@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import arrow from "../../assets/images/icons/arrow.svg";
-import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/logo3.png";
 // import navBrand from "../../assets/images/bg/navBrand.png";
 import Script from "next/script";
 import { FiInstagram } from "react-icons/fi";
@@ -67,8 +67,8 @@ export default function Navigation() {
       <div className="bg-[#0F2E3C] block xl:hidden">
         <div className="myContainer flex justify-between items-center">
         <div className="w-[244px] h-[80px] bg-pink-400 opacity-[.4]">
-            <a href="./">
-              {/* <Image src={logo} alt="Logo" width={1500} height={500} /> */}
+            <a href=" /">
+              <Image src={logo} alt="Logo" width={1500} height={500} />
             </a>
           </div>
           <TbMenu2 className="text-[40px] text-[#fff]" />
@@ -98,7 +98,7 @@ export default function Navigation() {
               </Link>
             </li>
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/Programs">
+              <Link href="/programs">
                 <a>Programs</a>
               </Link>
             </li>
