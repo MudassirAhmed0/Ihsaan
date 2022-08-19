@@ -1,5 +1,4 @@
 const GraySection = () => {
-
     return (
         <section className="bg-[#fff] pt-[80px] pb-[0px]">
             <div className="myContainer">
