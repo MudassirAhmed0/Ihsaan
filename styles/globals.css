@@ -13,7 +13,10 @@ html {
   font-family: grotesk-bold;
   src: url("../assets/fonts/hk-grotesk/TTF/HKGrotesk-Bold.ttf");
 }
-
+@font-face {
+  font-family: grotesk-italic;
+  src: url("../assets/fonts/hk-grotesk/TTF/HKGrotesk-Italic.ttf");
+}
 @font-face {
   font-family: grotesk-light;
   src: url("../assets/fonts/hk-grotesk/TTF/HKGrotesk-Light.ttf");
@@ -38,6 +41,16 @@ body {
   font-family: grotesk-regular;
 }
 
+.grotesk-bold,
+.fgb {
+  font-family: grotesk-bold;
+}
+
+.grotesk-italic,
+.fgi {
+  font-family: grotesk-italic;
+}
+
 .philosopher-regular,
 .fpr {
   font-family: philosopher-regular;
@@ -48,32 +61,30 @@ body {
 
 .myContainer {
   width: 100%;
-  max-width: 1672px;
-  padding-left: 60px;
-  padding-right: 60px;
+  max-width: 1752px;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+p.email img {
+  display: inline;
 }
 .image-div{
   position: relative;
   object-fit: contain;
 }
-
 .main__container{
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
 }
-
 .image_container> span{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -226,7 +237,24 @@ body {
 .image_container img {
   object-fit: cover;
 }
-
+.overlay-img img {
+  height: 1700px !important;
+  object-fit: cover;
+}
+.slider-main div:nth-child(1) {
+display:flex;
+justify-content: center;
+}
+.prof-img img {
+  object-fit: cover;
+  object-position: top;
+}
+.flex-imp {
+  display: flex !important;
+}
+.slick-next, .slick-prev {
+  background-color: gray !important;
+}
 @media (max-width: 640px) {
   .myContainer {
     padding-left: 30px;

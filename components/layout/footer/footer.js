@@ -85,11 +85,11 @@ const Footer = () => {
 
         <div className="myContainer px-[10px] py-[20px]">
           <h6 className="fgr text-[#fff] text-[24px] font-[600]">Waivers</h6>
-          <p className="fgr text-[#fff] text-[24px] py-[2px] hover:opacity-[.8] cursor-pointer">
+          <p className="fgr text-[#fff] text-[24px] py-[2px]">
             18+ Waiver | Under 18 Waiver
           </p>
           <p className="fgr text-[#fff] text-[24px] pt-[50px] pb-[50px]">
-            Privacy Policy | Terms & Conditions
+            <a className='cursor-pointer hover:opacity-[.8]'>Privacy Policy</a> | <a className='cursor-pointer hover:opacity-[.8]'>Terms & Conditions</a>
           </p>
         </div>
       </footer>
