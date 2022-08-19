@@ -83,7 +83,7 @@ export default function Navigation() {
           </div>
           <ul className="desktop-nav-menu text-white capitalize flex-col xl:flex-row text-center xl:text-left flex gap-x-8 pb-[40px] xl:pb-0">
             <li className="fgr font-[600] text-[#fff] transition-all duration-300 text-[23px] 2xl:text-[30px] px-[5px] 2xl:px-[8px] py-[20px] xl:py-[50px]">
-              <Link href="/about">
+              <Link href="/about-us">
                 <a>About Us</a>
               </Link>
             </li>
