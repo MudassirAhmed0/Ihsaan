@@ -58,7 +58,9 @@ body {
 body {
   color: #13100d;
 }
-
+.dblock { 
+  display: block !important;
+}
 .myContainer {
   width: 100%;
   max-width: 1752px;
@@ -67,8 +69,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.max-h-0 {
+  max-height: 0;
+}
 p.email img {
   display: inline;
+}
+ul.list-square li::marker {
+  font-size: 30px;
 }
 @keyframes fade {
   from {
