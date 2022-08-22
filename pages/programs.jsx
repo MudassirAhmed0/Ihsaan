@@ -1,15 +1,15 @@
 import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import DarkSection from "../components/dark-section/DarkSection";
-import HeadingText from "../components/heading-text/HeadingText";
-import Hero from "../components/hero/Hero";
+//import DarkSection from "../components/dark-section/DarkSection";
+//import HeadingText from "../components/heading-text/HeadingText";
+//  import Hero from "../components/hero/Hero";
 import Layout from "../components/layout/layout";
 import Slider from "react-slick";
 
 import Image from 'next/image'
-import Image1 from '../assets/images/Images_programs/Picture 9.jpg'
-import Image2 from '../assets/images/Images_programs/Picture 5.jpg'
-import Image3 from '../assets/images/Images_programs/Picture 7.jpg'
+import Image1 from '../assets/images/program/Picture9.jpg'
+import Image2 from '../assets/images/program/Picture5.JPG'
+import Image3 from '../assets/images/program/Picture7.jpg'
 
 export default function Programs() {
   const settings = {
@@ -34,10 +34,10 @@ export default function Programs() {
     <section className="w-full py-[93px] bg-[#F2F2F2]">
       <div className="myContainer flex">
         <div className=" w-full xl:h-[540px] flex justify-center flex-col text-center ">
-          <h1 className="fpr text-[40px] sm:[52px] md:text-[80px] 2xl:text-[110px] 2xl:leading-[140px] text-[#0F2E3C] ">
+          <h1 className="fpr text-[40px] sm:[52px] md:text-[80px] 2xl:text-[110px] 2xl:leading-[140px] lg:leading-[80px] leading-[40px] text-[#0F2E3C] ">
             Programs and seminars
           </h1>
-          <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] ">
+          <p className="text-[12px] md:text-[20px] lg:text-[24px] text-[#555555] lg:pt-[3%] pt-[5%]">
           We partner with organizations and institution to deliver robust programs and seminars to a wide range <br/> of audiences, both in person and online.
           </p>
         </div>

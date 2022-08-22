@@ -6,25 +6,26 @@ import hands from '../../../assets/images/services/hands.svg';
 
 const Content = ({ data, pb }) => {
   return (
-    <section className={`w-full pt-[100px] pb-[70px] bg-[#fff] relative ${pb ? "pb-[300px]" : ""}`}>
+    // <section className={`w-full pt-[100px] pb-[70px] bg-[#fff] relative ${pb ? "pb-[300px]" : ""}`}>
+       <section className={`w-full lg:py-[145px] py-[45px]  bg-[#fff] relative `}>
       <div className="myContainer  ">
-        <p className="text-[24px] leading-[36px] text-[#555555] pb-[40px]">
+        <p className="text-[24px] leading-[36px]  text-[#555555] pb-[40px]">
           Maintaining a healthy marriage takes consistent work. You’ll face new challenges to overcome every day, which can add stress and weight to a marriage. And if that becomes overwhelming, you’ll need new tools and techniques to keep your relationship going strong.
         </p>
-        <p className="text-[24px] leading-[36px] text-[#555555] pb-[40px]">
+        <p className="text-[24px] leading-[36px]  text-[#555555] pb-[40px]">
           Marital coaching focuses on helping you and your partner truly understand one another, how to effectively communicate, and resolving conflicts in a way you’re both comfortable with. By addressing unresolved conflict, couples often feel relieved and more fulfilled after their coaching sessions.
         </p>
 
       </div>
-      <div className="myContainer flex justify-end pt-[3.7%] pb-[8%]">
+      <div className="myContainer flex justify-end pt-[3.7%] pb-[8%] ">
 
-        <div className='absolute left-0'>
+        <div className='absolute left-0 w-[40%] top-[50%] transform translate-y-[-50%] hidden lg:block '>
           <div className='max-w-[600px] 2xl:max-w-[100%] left-0 after:w-[337px] relative after:h-[200px] after:bg-[#0F2E3C] after:rounded-bl-[100px] after:right-[50px] after:bottom-[-25px] after:absolute after:z-[-1] z-[2]
         before:w-[337px] relative before:h-[200px] before:bg-[#0F2E3C] before:rounded-tr-[100px] before:left-[0] before:top-[-60px] before:absolute
         '><Image src={data.img} />
           </div>
         </div>
-        <div className="w-[55%] pt-[5%]">
+        <div className="lg:w-[55%] pt-[5%] w-[100%]">
           <h6 className="fgb text-[28px] leading-[36px] text-[#555555]">
             Who is this for?
           </h6>

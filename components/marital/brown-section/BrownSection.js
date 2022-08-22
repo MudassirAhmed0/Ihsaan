@@ -8,23 +8,25 @@ const BrownSection = () => {
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] overlay-img'>
         <Image src={pattern} className='scale-[1.5] ' />
       </div>
-      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'>
+      <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99] '>
       </div>
       <div className="myContainer relative z-[2]">
-        <h1 className='fpr text-[70px] leading-[85px] text-center max-w-[900px] mx-auto'>Areas our marital coaching can help you with</h1>
-        <p className='fgr text-[24px] leading-[36px] max-w-[1502px] mx-auto text-center pt-[32px]'>
+        <h1 className='fpr lg:text-[70px] text-[40px] lg:leading-[85px] leading-[50px] text-center max-w-[900px] mx-auto'>Areas our marital coaching can help you with</h1>
+        {/* <p className='fgr text-[24px] lg:leading-[36px] leading-[28px] max-w-[1502px] mx-auto text-center pt-[32px] '> */}
+        <p className='fgr text-[24px] lg:leading-[36px] leading-[28px] width-[100%] mx-auto text-center pt-[32px] '>
+
         Ihsan Coaching provides comprehensive marital coaching services for all your needs, including:
         </p>
-        <ul className='flex flex-wrap max-w-[900px] mx-auto gap-y-[30px] pt-[3%] list-square'>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Communication</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Rebuild emotional connections</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Conflict resolution</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Better supporting your partner</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Financial responsibility</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Trust</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Work-life balance</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">Intimacy</li>
-            <li className="fgr text-[24px] leading-[36px] text-[#fff] w-[50%]">The Islamic concept of marriage</li>
+        <ul className='flex flex-wrap max-w-[900px] mx-auto gap-y-[30px] lg:pt-[3%] pt-[5%] list-square'>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Communication</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Rebuild emotional connections</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Conflict resolution</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Better supporting your partner</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Financial responsibility</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Trust</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Work-life balance</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">Intimacy</li>
+            <li className="fgr text-[24px] leading-[36px] text-[#fff] lg:w-[50%] w-[100%]">The Islamic concept of marriage</li>
         </ul>
       </div>
     </section>

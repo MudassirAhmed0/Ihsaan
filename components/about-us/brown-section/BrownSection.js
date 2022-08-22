@@ -11,12 +11,12 @@ const BrownSection = () => {
       <div className='absolute left-0 right-0 top-0 w-full h-[100%] bg-[#AE8B5C] opacity-[.99]'>
       </div>
       <div className="myContainer relative z-[2]">
-        <h1 className='fpr text-[100px] leading-[100px] text-center'>Our approach</h1>
+        <h1 className='fpr lg:text-[100px] md:text-[70px] text-[50px] lg:leading-[100px] md:leading-[70px] leading-[50px] text-center'>Our approach</h1>
         <p className='fgr text-[24px] leading-[36px] max-w-[1502px] text-center pt-[32px]'>
           With a unique understanding of the challenges Muslims may face in Western society, we’re able to offer tailored programs that bridge traditional coaching and Islamic consulting. And unlike traditional therapy, goal-oriented coaching is a more direct path to well being.
         </p>
         <div className="flex flex-wrap gap-x-[1.5%] mt-[107px]">
-          <div className='w-[31%] flex'>
+          <div className='md:w-[31%] w-[100%]  pt-[5%] flex'>
             <MdCheckCircle className='text-[#fff] text-[55px] mr-[5px] min-w-[65px]' />
             <div>
               <h6 className='fgb text-[28px] leading-[36px]'><span> Confidential</span>
@@ -24,7 +24,7 @@ const BrownSection = () => {
               <p className='fgr text-[24px] leading-[36px]'> All of the information you provide is held with the highest level of confidentiality in accordance with HIPPA compliance. Everything shared between you and your coach stays between you.</p>
             </div>
           </div>
-          <div className='w-[31%] flex'>
+          <div className='md:w-[31%] w-[100%] pt-[5%] flex'>
             <MdCheckCircle className='text-[#fff] text-[55px] mr-[5px] min-w-[65px]' />
             <div>
               <h6 className='fgb text-[28px] leading-[36px]'><span>Safe & affordable</span>
@@ -32,7 +32,7 @@ const BrownSection = () => {
               <p className='fgr text-[24px] leading-[36px]'>  Compared to traditional therapy, professional coaching is generally a more affordable option. Our consultations and sessions are done through a secure online platform, where you can feel comfortable talking in your home or another calming environment.</p>
             </div>
           </div>
-          <div className='w-[31%] flex'>
+          <div className='md:w-[31%] w-[100%] pt-[5%] flex'>
             <MdCheckCircle className='text-[#fff] text-[55px] mr-[5px] min-w-[65px]' />
             <div>
               <h6 className='fgb text-[28px] leading-[36px]'><span>Diverse</span>

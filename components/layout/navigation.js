@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import arrow from "../../assets/images/icons/arrow.svg";
-import logo from "../../assets/images/logo/logo3.png";
+import logo from "../../assets/images/logo/logo.svg";
 // import navBrand from "../../assets/images/bg/navBrand.png";
 import Script from "next/script";
 import { FiInstagram } from "react-icons/fi";
