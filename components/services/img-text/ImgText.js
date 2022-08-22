@@ -6,15 +6,16 @@ import hands from '../../../assets/images/services/hands.svg';
 
 const ImgText = ({data, pb}) => {
   return (
-    <section className={`w-full py-[145px] pb-[70px] bg-[#fff] relative ${pb ? "pb-[300px]":""}`}>
+    // <section className={`w-full lg:py-[145px] py-[45px] pb-[70px] bg-[#fff] relative ${pb ? "pb-[300px]":""}`}>
+    <section className={`w-full lg:py-[145px] py-[45px]  bg-[#fff] relative `}>
       <div className="myContainer flex justify-end ">
-        <div className='absolute left-0'>
+        <div className='absolute left-0 w-[40%] top-[50%] transform translate-y-[-50%] hidden lg:block '>
           <div className='max-w-[600px] 2xl:max-w-[100%] left-0 after:w-[200px] relative after:h-[200px] after:bg-[#0F2E3C] after:rounded-[100px] after:right-[-35px] after:bottom-[-40px] after:absolute after:z-[-1] z-[2]
         before:w-[337px] relative before:h-[200px] before:bg-[#0F2E3C] before:rounded-tr-[100px] before:left-[0] before:top-[-50px] before:absolute
         '><Image src={data.img} />
           </div>
         </div>
-        <div className="w-[55%] ">
+        <div className="lg:w-[55%] w-[100%] ">
           <h1 className="fpr text-[60px] leading-[100px]  text-[#0F2E3C] pt-[40px]">
           {data.title}
           </h1>

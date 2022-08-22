@@ -12,7 +12,7 @@ const JoinTeam = () => {
       </div>
       <div className="myContainer flex relative z-[1]">
 
-        <div className="w-[50%]">
+        <div className="lg:w-[50%] w-[100%]">
           <h1 className="fpr text-[70px] 2xl:text-[100px] leading-[70px] 2xl:leading-[100px] text-[#0F2E3C] pb-[30px]">
             Join our team
           </h1>

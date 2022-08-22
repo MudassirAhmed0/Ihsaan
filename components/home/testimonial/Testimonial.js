@@ -1,11 +1,6 @@
-import React from "react";
-import { BsFillCheckCircleFill } from "react-icons/bs";
-import { RiCloseCircleFill } from "react-icons/ri";
 import Image from "next/image";
 import Slider from "react-slick";
 import profile from '../../../assets/images/profile.jpeg';
-
-
 
 const Testimonial = () => {
     const settings = {
@@ -68,13 +63,6 @@ const Testimonial = () => {
 
                 </div>
             </div>
-
-
-
-
-
-
-
         </section>
     );
 };
